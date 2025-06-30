@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.btn{
+    font-family: "Roboto",sans-serif;
+    font-size: 20px;
+    color:rgb(12, 168, 142) ;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin:10px;
+    border: 1px solid rgb(12, 168, 142);
+    background: none;
+    text-align: center; 
+    text-decoration: none;
+    transition: 0.8s;
+    border-radius: 30px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+
+.btn:hover{
+    transform: scale(1.1);
+    color:#fff;
+}
+
+
+.background{
+    background: cover;
+    background: rgba(0,0,0, 0.7) url(Running.jpg);
+    background-blend-mode: darken;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+#Aboutpara{
+    margin: 0px 100px;
+    margin-bottom: 30px;
+}
+
+#About{ 
+    margin: 35%;
+    background: black;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    transition: 0.8s ;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 30px;   
+}
+#About:hover{
+  
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 0 #03e9f4, 0 0 50px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.About{
+     margin: 10% 7%;
+     padding: 5%;
+     padding: 10px;
+     box-shadow: 0 0 5px white, 0 0 30px white, 0 0 10px white, 0 0 0.5px white;
+     color: white;
+     background-color: black;
+     text-align: center;
+     border: 2px solid white;
+     border-radius: 30px;
+     
+
+}
+
+.logo{
+    width: 20%;
+    justify-content:center ;
+    align-items: center;
+    display: flex;
+     
+
+}
+.logo img{
+    width: 20%;
+    border: 10px solid white;
+    border-radius: 50px;
+}
+
+body {
+    
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+.box-main{
+
+    color: white;
+   margin: auto;
+   padding-top: 30%;
+   padding-bottom: 30%;
+   text-align: center;
+   justify-content: center;
+
+}
+
+
+
+h2{
+    
+
+    font-weight: bold;
+    padding: 30px;
+    
+}
+
+.imgFluid{
+
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+
+.paras{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    padding: 0px 65px;
+    color: white;
+
+}
+
+.secLeft {
+
+height:300px;
+flex-direction: row-reverse;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+max-width: 90%;
+margin: auto;
+}
+
+.secRight{
+    height:300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 90%;
+    margin: auto;
+}
+
+#line{
+
+margin: 3.5rem 0;
+background: white;
+height: 3px;
+
+}
+
+.stories{
+     box-shadow: 0 0 5px white, 0 0 30px white, 0 0 10px white, 0 0 0.5px white;
+     margin: 10% 7%;
+     padding: 5%;
+     padding-top: 10px;
+     color: white;
+     background-color: black;
+     text-align: center;
+     border: 2px solid white;
+     border-radius: 30px;
+
+}
+
+.container{
+    display: flex;
+    column-gap: 20%;
+    margin-bottom: 30px;
+
+}
+
+.contact{
+    box-shadow: 0 0 5px white, 0 0 30px white, 0 0 10px white, 0 0 0.5px white;
+    height: 30%;
+    width: 40%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-size: 15px;
+
+}
+
+.copyright{
+     
+     height: 30%;
+     width: 40%;
+     color: white;
+     background-color: black;
+     text-align: center;
+     border: 2px solid white;
+     border-radius: 30px;
+     font-size: 15px;
+     box-shadow: 0 0 5px white, 0 0 30px white, 0 0 10px white, 0 0 0.5px white;
+
+}
+
+.location{
+    margin: 23%;
+    padding-bottom: 40px;
+     color: white;
+     background-color:black;
+     text-align: center;
+     border: 2px solid white;
+     border-radius: 30px;
+     margin-bottom: 100px;
+     box-shadow: 0 0 5px white, 0 0 30px white, 0 0 10px white, 0 0 0.5px white;
+
+}
+
+
+h1{
+
+    padding: 50px;
+
+}
+
+.BMI{
+
+    margin: 23%;
+    padding-bottom: 40px;
+    box-shadow: 0 0 5px #00b894, 0 0 30px #00b894, 0 0 10px #00b894, 0 0 0.5px #00b894;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 2px solid #00b894;
+    border-radius: 30px;
+    
+}
+
+.BMI input{
+    width: 30%;
+    height: 35px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    background: transparent;
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    font-size: large;
+    outline: none;
+}
+
+.BMI button{
+    background-image: linear-gradient(#0984e3,#6c5ce7);
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 17px 21px;
+    cursor: pointer;
+    border: none;
+    overflow: hidden;
+    transition: 0.8s;
+    margin-bottom: 30px;
+}
+
+.BMI button:hover{
+    transform: scale(1.1);
+}
+
+

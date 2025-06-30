@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function calculateAndDisplayBMI(){
+            var weight = document.getElementById("weight").value;
+            var height = document.getElementById("height").value;
+            var bmi = weight / Math.pow(height,2);
+            var category='Under Weight';
+            if(bmi>=18.5 && bmi<25){
+                category='Normal Weight';}
+            else if(bmi>=25 && bmi<30){
+                category='Over Weight';}
+            else if(bmi>=30 ){
+             category='Obese';
+            }
+          document.getElementById('result').textContent='Your BMI is:'+bmi.toFixed(2);
+          document.getElementById('category').textContent= category; 
+        }
+    </script>
+    <link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sporty fitness</title>
+</head>
+
+<body class="background">
+    
+    
+        <div class="box-main">
+               <h2>Welcome to Sporty Fitness</h2>
+              <p>Enter our community of sportsters and become the best version of yourself</p>
+             <a href="get started.html"><button class="btn">Get started</button></a>
+
+</div>
+    
+    <section class="About">
+    <h2 id="About">About us</h2>
+    <p id="Aboutpara">At Sporty Fitness Club (SFC), our aim is to inspire and empower individuals to achieve their fitness goals while fostering a supportive 
+        community dedicated to health and well being. We focus on a holistic approach to fitness, encouraging not only physical strength but also mental relief and nutritional
+         balance. Our goal is to let our members to achieve a better lifestyle.</p>
+         <p id='line'></p>
+    <section class="secRight">
+        
+<div class="paras">
+<h2>How We Started..</h2>
+<p>Established in 2005, SFC was founded by proficient fitness OG, named "Ronnie Coleman", who was the Greatest Bodybuilder of his prime.
+     He aimed to create a space where people could transform their lives through fitness and wellness.
+     Over the years we have grown into a hub of individuals seeking a holistic approach to health.
+</p>
+</div>
+<div class="picture">
+    <img class="imgFluid" src="Ronnie.jpg" alt="Image not found" height=300px width=250px>
+</div>
+    </section>
+    <p id='line'></p>
+  <section class="secLeft">
+        
+    <div class="paras">
+    <h2>Facilities and Services</h2>
+    <p >SFC boasts state-of-the-art equipment,dedicated workout areas for cardio, strength, training and group exercise classes including Yoga, Zumba, and high-intensity interval training (HIIT).
+         Our certified personal trainers offer tailored programs and nutritional guidance to help you reach your fitness milestones. 
+         At SFC, we believe in giving back. We participate alot in local charity programs. 
+         Organize fitness events for community outreach and exposure.
+         Also, we sponsor health workshops to promote wellness beyond our gym walls.</p>
+    </div>
+    <div class="picture">
+        <img class="imgFluid" src="Equipments.png" alt="Image not found" height=300px width=250px>
+    </div> 
+    </section>
+
+    <p id='line'></p>
+    <section class="secRight">
+
+    <div class="paras">
+        <h2>SFC Trainers</h2>
+        <p>Our team includes Certified trainers with great experstise in various fitness disciplines. 
+            They're very dedicated for guiding and motivating our members on their fitness journey, ensuring that each individual member, who is sticking with us, recieves personalized attention and support, at Gym and online also.
+        </p>
+        </div>
+        <div class="picture">
+            <img class="imgFluid" src="Trainer.jpg" alt="Image not found" height=300px width=250px>
+        </div>
+            </section>
+
+        </section>
+
+    <section class="stories">
+            <h2 id="About">Success Stories</h2>
+            <p id='line'></p>
+        <section class="secLeft">
+        
+            <div class="paras">
+            <h2>Steve Kamb</h2>
+            <p>Joining SFC is the best decision that anyone wanting to get fit and lose weight could ever make.
+                 I have joined conventional gyms in the past with little or no success, and the longest that I stayed a member was for 6 months.
+                  When you go to the gym on your own you can not get results without paying large amounts of money for personal one to one training.
+                 I have been with SFC now for nearly 18 months, and have achieved great results.  </p>
+            </div>
+            <div class="picture">
+                <img class="imgFluid" src='Steve.png' alt="Image not found" height=350px width=350px>
+            </div>
+                </section>
+                <p id='line'></p>
+              <section class="secLeft">
+                    
+                <div class="paras">
+                <h2>Anthony</h2>
+                <p >Since being at SFC I have done things I never dreamed I would do.
+                     I have stepped so far out of my comfort zone I can no longer see it.
+                      Anyone who knows me personally would know that 5 years ago I barely walked anywhere,
+                       never mind ran. I did not own any trainers, I now practically live in gym gear on my days off work!
+                     I have taken part in four 10K obstacle races, swam a mile of Windermere, done several running events and I am planning on many more. </div>
+                <div class="picture">
+                    <img class="imgFluid" src='Anthony.png' alt="Image not found" height=350px width=350px>
+                </div> 
+                </section>
+            
+
+    
+    
+
+    </section>
+     
+    <div class="BMI">
+    <h1>BMI CALCULATOR</h1>
+    <form>
+        <input type="text" id="weight" name="weight" placeholder="Enter your weight(kg)">
+       <br>
+        <input type="text" id="height" name="height" placeholder="Enter your height(m)">
+        <br>
+       
+        <button type="button" onclick="calculateAndDisplayBMI()">Calculate BMI</button>
+    </form>
+    <p id="result"></p>
+    <p id="category"></p>
+</div>
+
+
+    <section class="location">
+ 
+        <h2>Location</h2>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115750.64622575688!2d66.99791112647974!3d24.959047308942615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339fd6aaee923%3A0xc97bc110a88dd130!2sMillat%20Garden%20Housing%20Society!5e0!3m2!1sen!2s!4v1701321584619!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    
+     
+    
+            
+    </section>
+    
+
+    <section class="container">
+    <div class="contact">
+          <h3>Contact</h3>
+          <p>  Call Us:</p>    
+          <p>+92-325-6789012</p>    
+        
+        
+
+</div>
+
+
+
+
+       
+        
+    <div class="copyright">
+
+            <p>&copy; 2023 Sporty fitness. All Rights Reserved.</p>
+            <h4 id="Support">Support us on</h4>
+            <div id="Sites">
+            <a href="https://twitter.com/" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="https://facebook.com/" target="_blank">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+            <a href="https://tumblr.com" target="_blank"><ion-icon name="logo-tumblr"></ion-icon></a>
+
+    
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        
+    </div>
+</section>
+
+
+
+
+</body>
+
+</html>
